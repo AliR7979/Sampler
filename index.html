@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>Ingredient Sampler</title>
+</head>
+
+<style>
+.content {
+    display: none;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+</style>
+
+<body>
+    <div id="content1" class="content">
+        <div class="first-html">
+            <div class="anime" id="anime">
+                <h1>Making Some Eggs....</h1>
+                <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id="area">
+                    <div id="sides">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="egg">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </div>
+</div>
+
+<div id="content2" class="content">
+    <header>
+        <h3 class="entry-badge">- Ramen at your Service -</h3>
+        <h2>Miso</h2>
+        <h1>Full York <span class="red">Ramen</span></h1>
+        <blockquote>The word "ramen" may have come from the Chinese word "Lamian", a type of Chinese Noodle.<br><br> The Shin-Yokohama Ramen Museum is the world's first food-themed amusement park.</blockquote>
+    </header>
+
+    <h3 class="ingredients-title">Ingredient</h3>
+    <ul>
+        <li data-count="1" data-unit="lb">Cooked Pork</li>
+        <li data-count="375" data-unit="g">Ramen Noodles</li>
+        <li data-count="4" data-unit="cups">Chicken or Beef broth</li>
+        <li data-count="4" data-unit="cups">Water</li>
+        <li data-count="1" data-unit="cup">Carrots, Shredded </li>
+        <li data-count="1" data-unit="-">Thumb Sized Ginger</li>
+        <li data-count="1" data-unit="cup">Scalliion or Chives</li>
+        <li data-count="1" data-unit="oz">Shiitake mushrooms, Dried</li>
+        <li data-count="4" data-unit="cloves">Garlic</li>
+        <li data-count="1" data-unit="log">Naruto-Maki</li>
+        <li data-count="3" data-unit="sheets">Nori</li>
+        <li data-count="4" data-unit="tbsp">Soy Sauce</li>
+        <li data-count="2" data-unit="tbsp">Worcestershine Sauce</li>
+        <li data-count="2" data-unit="tbsp">Chilli Oil</li>
+        <li data-count="1" data-unit="tbsp">Sesame Oil</li>
+        <li data-count="1" data-unit="big">Soft-Boiled Eggs</li>
+    </ul>
+    
+    <button>Think you've got what it takes?</button>
+    
+    <h3 class="directions-title">Let's start Sluping!</h3>
+    
+    <ol>
+        <li>Get your filthiest Wok over the fire the best you can situate it</li>
+        <li>Add Oil, over medium-low heat. Throw the garlic and ginger; stir fry for 2 minutes or until soft and fragrant.</li>
+        <li>Add the broth and the water. Bring to a simmer; add the mushrooms and simmer for 10 minutes</li>
+        <li>Add the instant noodles until the noodles have softened. Add the scallions and stir to combine.</li>
+        <li>Remove from heat, stir in the carrots,and top with a soft-boiled egg. Season with chili oil, hot sauce, sesame oil, and/or soy sauce and salt to taste.</li>
+        <li>Serve with Nori, Naruto-Maki and a giant spoon</li>
+    </ol>
+    
+    <script src="js/script.js"></script>
+</div>
+
+<script>
+    window.onload = function() {
+    var content1 = document.getElementById('content1');
+    var content2 = document.getElementById('content2');
+    setTimeout(function() {
+    content1.style.display = 'block';
+    }, 1000);
+    setTimeout(function() {
+        content1.style.display = 'none';
+        content2.style.display = 'block';
+    }, 4000);
+    };
+</script>
+
+</body>
+
+<footer class="footer">
+    <button class="directionButton"> 
+    <b>Art</b>
+    <div class="directionButton__content">
+        <p>This is a Ingredient concept sampler for Miso Ramen. This is just a concept, where Advanced HTML and CSS is used. The main mind set behind this sampler was to make a very different and a static compostition. I wanted to use most of the porperties to have a better understanding of CSS. With Ramen being a religious meal to many people, this was an idea that relates to the needle work samplers. I wanted my sampler to appear modern and friendly with some random fun properties to show the depthness into the thought.<br><br> I have researched and challenged myself in using CSS and HTML to the most with minor JavaScript. The concepts use in this assignment were Transforms, nth-child selector, LAB colour space, and HTML entities, CSS perspective, CSS columns and other more. There was some fustration behind this assignment but much more of self learning and understanding.<br><br>credits:<br> pinchofyum.com<br>s3-us-west-2.amazonaws.com/s.cdpn.io/60583/bg.jpg<br>icons8.com</p>
+        <p><em>-Ali-</em></p>
+        </div>
+    </button>
+</footer>
+
+</html>

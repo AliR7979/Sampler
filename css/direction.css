@@ -1,0 +1,38 @@
+.footer {
+    position: relative;
+    display: flex; 
+    align-items: right; 
+}
+
+.directionButton {
+    width: 50px;
+    height: 50px;
+    color: lab(64.364%, -6.61%, 13.234%);
+    font-size: 1.2rem;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    transform: rotate(5deg);
+    border: 5px, lab(1.759%, 7.236%, -20.235%);
+}
+
+.directionButton__content {
+    font-size: 20px;
+    visibility: hidden;
+    color: lab(22.32%, 35.242%, 27.38%);
+    text-align: left;
+    padding: 15px;
+    position: absolute;
+    top: 100%;
+    right: -400px;
+    z-index: 1;
+    transform: rotate(10deg);
+    width: 400px;
+}
+
+.directionButton:hover .directionButton__content {
+    visibility: visible;
+    transform: rotate(-5deg);
+    transition: all 2s;
+
+}
